@@ -1,0 +1,17 @@
+body {
+    font-family: "Times New Roman";
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+
+}
+
+p {
+    line-height: 2;
+    font-size: 1.25rem;
+}
