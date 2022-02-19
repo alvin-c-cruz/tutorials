@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template
 
-bp = Blueprint('basics', __name__, template_folder='pages', url_prefix='/basics')
+bp = Blueprint('basics', __name__, template_folder='pages', static_folder='static', url_prefix='/basics',
+               static_url_path='static')
 
 
 @bp.route('/')

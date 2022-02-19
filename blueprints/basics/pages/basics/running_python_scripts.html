@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid row">
+    <div class="col-2">
+        <h2>Python Basics</h2>
+        {% include 'basics/navbar.html' %}
+    </div>
+    <div class="col-10">
+        <h3>Running Python Scripts</h3>
+        <p>There are three ways to run a python script. </p>
+        <ul>
+            <li><a href="#idle">Using python's IDLE Shell</a></li>
+            <li><a href="#cmd">Via the command prompt</a></li>
+            <li><a href="#ide">From the built-in terminal of IDE</a></li>
+        </ul>
+        <p>In this tutorial we will create a simple python file that prints <strong>Hello World!</strong>. The code is as follows:</p>
+        <code>
+            print("Hello World!")
+        </code>
+        <br><br>
+
+        <div id="idle">
+            <h4>Using python's IDLE Shell</h4>
+            <p>IDLE Shell is installed together with python. You can write codes with idle and run it in the shell.</p>
+            <div class="row p-3">
+                <div class="col-3">
+                    <img src="{{ url_for('basics.static', filename='basics/images/project_folder.JPG') }}"
+                         alt="project folder with .py file" class="img-fluid">
+                </div>
+                <div class="col-9">
+                    <ol>
+                        <li>Create a folder that will contain the python file</li>
+                        <li>Create a file inside the folder and change the extension name to .py</li>
+                        <li>Right-click the .py file and choose <em>Edit with IDLE</em></li>
+                        <li>Type <code>print("Hello World!")</code> in the .py file</li>
+                        <li>Choose <em>Run</em> in IDLE's menu bar and click <em>Run Module</em>. The shortcut key is F5.</li>
+                    </ol>
+                </div>
+            </div>
+            <p>The python code will run in IDLE Shell.</p>
+            <img src="{{ url_for('basics.static', filename='basics/images/idle_shell.JPG') }}"
+                         alt="project folder with .py file" class="img-fluid">
+        </div>
+
+
+
+
+        <h4 id="cmd">Via the command prompt</h4>
+        <h4 id="ide">From the built-in terminal of IDE</h4>
+
+
+    </div>
+</div>
+
+{% endblock %}
