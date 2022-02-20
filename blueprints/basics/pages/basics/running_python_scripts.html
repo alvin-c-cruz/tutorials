@@ -14,13 +14,8 @@
             <li><a href="#cmd">Via the command prompt</a></li>
             <li><a href="#ide">From the built-in terminal of IDE</a></li>
         </ul>
-        <p>In this tutorial we will create a simple python file that prints <strong>Hello World!</strong>. The code is as follows:</p>
-        <code>
-            print("Hello World!")
-        </code>
-        <br><br>
 
-        <div id="idle">
+        <div id="idle" class="mt-5">
             <h4>Using python's IDLE Shell</h4>
             <p>IDLE Shell is installed together with python. You can write codes with idle and run it in the shell.</p>
             <div class="row p-3">
@@ -31,7 +26,7 @@
                 <div class="col-9">
                     <ol>
                         <li>Create a folder that will contain the python file</li>
-                        <li>Create a file inside the folder and change the extension name to .py</li>
+                        <li>Create a file inside the folder and change the extension name to .py.</li>
                         <li>Right-click the .py file and choose <em>Edit with IDLE</em></li>
                         <li>Type <code>print("Hello World!")</code> in the .py file</li>
                         <li>Choose <em>Run</em> in IDLE's menu bar and click <em>Run Module</em>. The shortcut key is F5.</li>
@@ -40,15 +35,47 @@
             </div>
             <p>The python code will run in IDLE Shell.</p>
             <img src="{{ url_for('basics.static', filename='basics/images/idle_shell.JPG') }}"
-                         alt="project folder with .py file" class="img-fluid">
+                         alt="idle shell photo" class="img-fluid">
         </div>
 
+        <div id="cmd" class="mt-5">
+            <h4 >Via the command prompt</h4>
+            <p>You can also run python scripts in windows command prompt.</p>
+            <div class="row p-3">
+                <div class="col-3">
+                    <img src="{{ url_for('basics.static', filename='basics/images/cmd_prompt_1.JPG') }}"
+                         alt="folder to command prompt photo" class="img-fluid">
+                </div>
+                <div class="col-9">
+                    <ol>
+                        <li>Click the folder's address bar</li>
+                        <li>While the address is highlighted, type <code>cmd</code> and press <strong>Enter</strong> key. A command prompt will appear.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row p-3">
+                <div class="col-3">
+                    <img src="{{ url_for('basics.static', filename='basics/images/cmd_prompt_2.JPG') }}"
+                         alt="run script in command prompt photo" class="img-fluid">
+                </div>
+                <div class="col-9">
+                    <ol start="3">
+                        <li>Type <code>python app.py</code> and press <strong>Enter</strong></li>
+                        <li>The python code will run in the command prompt.</li>
+                    </ol>
+                </div>
+            </div>
 
 
+        </div>
 
-        <h4 id="cmd">Via the command prompt</h4>
-        <h4 id="ide">From the built-in terminal of IDE</h4>
-
+        <div id="cmd" class="mt-5">
+            <h4 id="ide">From the built-in terminal of IDE</h4>
+            <p>Integrated Development Environment, like PyCharm, has built-in terminal where you can run python scripts.</p>
+            <img src="{{ url_for('basics.static', filename='basics/images/pycharm_1.JPG') }}"
+                         alt="run script in PyCharm photo" class="img-fluid">
+            <p>There's a PyCharm way of running python scripts and will not be covered here.</p>
+        </div>
 
     </div>
 </div>

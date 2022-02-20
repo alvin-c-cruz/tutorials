@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid row">
+    <div class="col-2">
+        <h2>Python Basics</h2>
+        {% include 'basics/navbar.html' %}
+    </div>
+    <div class="col-10">
+        <h3>Variables</h3>
+        <p>Variables are data containers. Its like a bucket where you put something for later use. To create a variable simply assign a value to it, no declaration needed. The following code will print number 39.</p>
+        <code><pre>
+    my_var = 39
+    print(my_var)
+        </pre></code>
+
+        <h3>Data Type</h3>
+        <p>The basic variable data types are:</p>
+        <ol>
+            <li>String</li>
+            <li>Number</li>
+            <li>Boolean</li>
+            <li>Tuple</li>
+            <li>List</li>
+            <li>Dictionary</li>
+        </ol>
+        <br>
+
+        <h4>String</h4>
+        <p>String should be surrounded by either single quotation marks, or double quotation marks.</p>
+        <code>
+            <pre>
+    my_string = 'this is a string'
+    another_string = "this is also a string"
+
+    print(my_string)
+    print(another_string)
+            </pre>
+        </code>
+        <br>
+
+        <h4>Number</h4>
+        <p>Python has three number data types, <code>int</code>, <code>float</code> and <code>complex</code>.</p>
+        <code>
+            <pre>
+    my_int = 10
+    my_float = 25.75
+    my_complex = 1j
+
+    print(my_int)
+    print(my_float)
+    print(my_complex)
+            </pre>
+        </code>
+        <br>
+
+        <h4>Boolean</h4>
+        <p>Boolean represents either <code>True</code> or <code>False</code>.</p>
+        <code>
+            <pre>
+    my_bool = True
+    print(my_bool)
+            </pre>
+        </code>
+        <br>
+
+        <h4>Tuple</h4>
+        <p>Tuple stores multiple variables separated by comma in a single variable. It is enclosed by brackets. Once the tuple is created the contents cannot change. </p>
+        <code>
+            <pre>
+    my_tuple = (1, "two", 3, "4")
+    print(my_tuple)
+            </pre>
+        </code>
+        <br>
+
+        <h4>List</h4>
+        <p>List stores multiple variables separated by comma in a single variable. It is enclosed by square brackets. The contents of a list can change.</p>
+        <code>
+            <pre>
+    my_list = [1, "two", 3, "4"]
+    print(my_list)
+            </pre>
+        </code>
+        <br>
+
+        <h4>Dictionary</h4>
+        <p>Dictionary uses key and value pairs in storing multiple variables. It is enclosed by curly brackets. The contents of a dictionary can change.</p>
+        <code>
+            <pre>
+    my_dict = {"key_1": "value_1", "key_2": "value_2", 3: "value_3 with key of type int"}
+    print(my_dict)
+            </pre>
+        </code>
+        <br>
+
+    </div>
+</div>
+
+{% endblock %}
